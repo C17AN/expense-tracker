@@ -1,0 +1,55 @@
+.balance {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.balance__current {
+  text-align: center;
+  h3 {
+    font-size: 1.7rem;
+    margin: 1rem 0;
+  }
+}
+
+.balance__container {
+  display: flex;
+  width: 50%;
+  padding: 1rem 0;
+  margin: 1rem 0;
+  justify-content: space-evenly;
+  border: 1px solid lightgray;
+  text-align: center;
+}
+
+.balance__expenditure {
+  color: #c43939;
+  padding: 0.5rem;
+  h3 {
+    color: black;
+  }
+}
+
+.balance__income {
+  color: #39b46d;
+  padding: 0.5rem;
+  h3 {
+    color: black;
+  }
+}
+
+.balance__income div::before {
+  content: "+";
+}
+
+.balance__expenditure div::before {
+  content: "-";
+}
+
+@media (max-width: 768px) {
+  .balance__container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+}

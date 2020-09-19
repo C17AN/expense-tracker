@@ -1,0 +1,27 @@
+$green: #39b46d;
+$red: #c43939;
+
+.historyItem {
+  display: flex;
+  height: 2rem;
+  border: 1px solid lightgray;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+  background-color: white;
+  padding: 0.5rem 1.5rem;
+}
+
+.income {
+  border-right: 10px solid $green;
+}
+.expenditure {
+  border-right: 10px solid $red;
+}
+
+@media (max-width: 768px) {
+  .historyItem {
+    width: 70%;
+    height: 1.5rem;
+  }
+}
