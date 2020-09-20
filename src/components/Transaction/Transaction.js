@@ -5,13 +5,18 @@ function Transaction() {
   return (
     <div className="transaction">
       <h3>거래 내역 추가</h3>
+      <hr className="transaction__line"></hr>
       <div className="transaction__title">
-        <label for="content">내용 : </label>
-        <input type="text" name="content"></input>
+        <div>내용</div>
+        <input
+          type="text"
+          placeholder="내용을 입력하세요"
+          name="content"
+        ></input>
       </div>
-      <div className="transaction__price">
-        <label for="price">금액 : </label>
-        <input type="text" placeholder="금액을 입력하세요" name="price"></input>
+      <div className="transaction__cost">
+        <div>금액</div>
+        <input type="text" placeholder="금액을 입력하세요" name="cost"></input>
       </div>
       <div className="transaction__checkbox">
         <input type="radio" name="type" value="income"></input>
@@ -19,7 +24,7 @@ function Transaction() {
         <input type="radio" name="type" value="expenditure"></input>
         <label for="expenditure">지출</label>
       </div>
-      <button>추가하기</button>
+      <button className="transaction__button">추가하기</button>
     </div>
   );
 }

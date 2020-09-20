@@ -12,6 +12,11 @@ $red: #c43939;
   padding: 0.5rem 1.5rem;
 }
 
+.historyItem:hover {
+  transition: 0.1s ease-in;
+  transform: scale(1.02);
+}
+
 .income {
   border-right: 10px solid $green;
 }
