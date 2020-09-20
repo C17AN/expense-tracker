@@ -15,3 +15,10 @@
 
 ![UI](./UI.PNG)
 
+---
+
+### 2일차
+
+- context 제작 및 리듀서 구현
+
+![Transaction](./Transaction.PNG)
