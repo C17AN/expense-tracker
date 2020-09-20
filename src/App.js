@@ -4,7 +4,7 @@ import Balance from "./components/Balance/Balance";
 import History from "./components/History/History";
 import Transaction from "./components/Transaction/Transaction";
 import Graph from "./components/Graph/Graph";
-import BalanceProvider from "./BalanceProvider";
+import { BalanceProvider } from "./context/balanceContext";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "./styles/App.scss";
 import Footer from "./components/Footer/Footer";
@@ -13,7 +13,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <div className="container">
+        <BalanceProvider className="container">
           <Header />
           <Switch>
             <Route exact path="/" component={Balance}></Route>
@@ -22,7 +22,7 @@ function App() {
             <Route path="/graph" component={Graph}></Route>
           </Switch>
           <Footer />
-        </div>
+        </BalanceProvider>
       </div>
     </Router>
   );
