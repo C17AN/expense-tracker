@@ -7,6 +7,7 @@ import Graph from "./components/Graph/Graph";
 import BalanceProvider from "./BalanceProvider";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "./styles/App.scss";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route path="/transaction" component={Transaction}></Route>
             <Route path="/graph" component={Graph}></Route>
           </Switch>
+          <Footer />
         </div>
       </div>
     </Router>
