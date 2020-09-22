@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@toast-ui/react-chart": "^1.0.2",
     "classnames": "^2.2.6",
     "cra-template": "1.0.3",
     "node-sass": "^4.14.1",

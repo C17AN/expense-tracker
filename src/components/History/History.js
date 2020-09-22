@@ -8,16 +8,22 @@ function History() {
   return (
     <div className="history">
       <h3>지출 내역</h3>
-      {transactions.map((transaction) => (
-        <HistoryItem
-          title={transaction.title}
-          cost={transaction.cost}
-          type={transaction.type}
-        ></HistoryItem>
-      ))}
-      <div className="history__caution">
-        * 최근 한 달간의 내역만이 저장됩니다.
-      </div>
+      {transactions.length !== 0 ? (
+        <>
+          {transactions.map((transaction) => (
+            <HistoryItem
+              title={transaction.title}
+              cost={transaction.cost}
+              type={transaction.type}
+            ></HistoryItem>
+          ))}
+          <div className="history__caution">
+            * 최근 한 달간의 내역만이 저장됩니다.
+          </div>
+        </>
+      ) : (
+        <div>아직은 내용이 없어요 ㅜㅜ</div>
+      )}
     </div>
   );
 }

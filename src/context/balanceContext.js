@@ -3,8 +3,10 @@ import Reducer from "./Reducer";
 
 const initialState = {
   balance: 0,
+  // 타입스크립트가 이래서 필요하구나..
   transactions: [
-    { title: "도서 구입", type: "income", cost: 20000, timestamp: 2020 },
+    // { title: "알바비", type: "income", cost: 300000, timestamp: 2020 },
+    // { title: "도서 구입", type: "expenditure", cost: 20000, timestamp: 2020 },
   ],
 };
 

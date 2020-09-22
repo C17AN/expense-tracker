@@ -1,14 +1,16 @@
 import React, { useContext, useState } from "react";
+import { useHistory } from "react-router-dom";
 import { BalanceContext } from "../../context/balanceContext";
 import "./Transaction.scss";
 
 function Transaction() {
   const { transactions, dispatch } = useContext(BalanceContext);
-  console.log(transactions);
+  const history = useHistory();
 
   const handleSubmit = (e) => {
     e.preventDefault();
     addTransaction();
+    history.push("/");
   };
   const handleChange = (e) => {
     setInfo({ ...info, [e.target.name]: e.target.value });
