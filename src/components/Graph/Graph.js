@@ -4,34 +4,34 @@ import "./Graph.scss";
 
 const Graph = () => {
   const data = {
-    categories: ["June", "July", "Aug", "Sep", "Oct", "Nov"],
+    categories: ["1", "4", "7", "10", "13", "16", "19", "22", "25", "28"],
     series: [
       {
-        name: "Budget",
-        data: [5000, 3000, 5000, 7000, 6000, 4000],
+        name: "수입",
+        data: [5000, 3000, 5000, 7000, 6000, 4000, 5000, 7000, 6000, 4000],
       },
       {
-        name: "Income",
-        data: [8000, 1000, 7000, 2000, 5000, 3000],
+        name: "지출",
+        data: [8000, 1000, 7000, 2000, 5000, 3000, 7000, 2000, 5000, 3000],
       },
     ],
   };
 
   const options = {
     chart: {
-      width: 0,
+      width: 700,
       height: 300,
       title: "Monthly Revenue",
-      format: "1,000",
+      format: "5,000",
     },
     yAxis: {
-      title: "Month",
+      title: "금액",
     },
     xAxis: {
-      title: "Amount",
+      title: "일",
       min: 0,
       max: 9000,
-      suffix: "$",
+      suffix: "일",
     },
     series: {
       showLabel: true,
